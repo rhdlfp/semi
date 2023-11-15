@@ -1,0 +1,997 @@
+:root{
+    --text-color: #white;
+    --background-color: #253343;
+    --accent-color: #d49466;
+}
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'KOTRA_BOLD-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+/*header*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.chacam{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid whitesmoke;
+    padding: 8px 12px;
+}
+
+.chacam_logo{
+    font-size: 34px;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+}
+
+.chacam_menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.chacam_menu li{
+    padding: 7px 12px;
+    color: black;
+}
+
+.chacam_menu li:hover{
+    background-color: #6e8bac;
+    border-radius:10px;
+}
+/*  */
+
+section {
+    padding-top: 3%;
+}
+
+/* 차캠 태그별 추천 */
+.favtag_text{
+    width: 1200px;
+    height: 200px;
+    margin: auto;
+ 
+}
+.favtag_text h1 {
+    color: rgb(57, 116, 217);
+    padding-top: 10%;
+    margin-left: 30px;
+    font-size: 35px;
+    font-family: 'KOTRA_BOLD-Bold'; 
+}
+
+.favtag_text h4 {
+    color: rgb(133, 133, 133);
+    margin-left: 30px;
+}
+.favtag {
+    position: relative;
+    z-index: 1;
+    width: 1200px;
+    height: 270px;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+.favtag_place img {
+    display: block;
+    width: 100%;
+}
+
+.favtag_place2 img {
+    display: block;
+    width: 100%;
+}
+
+.favtag_place {
+    position: relative;
+    z-index: 1;
+    width:524px ;
+    height: 230px;
+    margin-right: 20px;
+    background-color: #253343;
+    border-radius: 13px;
+    
+}
+
+.favtag_place2 {
+    position: relative;
+    z-index: 1;
+    width:297px ;
+    height: 230px;
+    margin-right: 20px;
+    background-color: #253343;
+    border-radius: 13px;
+    
+}
+.favtag_place3 {
+    position: relative;
+    z-index: 1;
+    width:297px ;
+    height: 230px;
+    background-color: #253343;
+    border-radius: 13px;
+}
+
+.favtag2 {
+    position: relative;
+    z-index: 1;
+    width: 1200px;
+    height: 230px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+/*    background-color: rgb(194, 194, 194);*/
+}
+
+.favtag2_place {
+    position: relative;
+    z-index: 1;
+    width:524px ;
+    height: 230px;
+    margin-right: 20px;
+    background-color: #253343;
+    border-radius: 13px;
+    
+}
+
+.favtag2_place2 {
+    position: relative;
+    z-index: 1;
+    width:297px ;
+    height: 230px;
+    margin-right: 20px;
+    background-color: #253343;
+    border-radius: 13px;
+    
+}
+.favtag2_place3 {
+    position: relative;
+    z-index: 1;
+    width:297px ;
+    height: 230px;
+    background-color: #253343;
+    border-radius: 13px;
+    
+}
+
+.imgBox1 {
+    position: absolute;
+    z-index: 2;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    width: 524px;
+    height: 230px;
+    border-radius: 13px;
+    background-color: black;
+}
+
+.imgBox2 {
+    position: absolute;
+    z-index: 2;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    width: 297px;
+    height: 230px;
+    border-radius: 13px;
+    background-color: black;
+}
+
+.textBox {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 297px;
+    height: 230px;
+    border-radius: 13px;
+    
+}
+
+.textBox h4 {
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+.textBox h6 {
+    color: white;
+    position: absolute;
+    top: 85%;
+    left: 10%;
+}
+/*  */
+
+.camcar_text{
+    width: 1200px;
+    height: 200px;
+    margin: auto;
+/*    background-color: antiquewhite;*/
+}
+
+.camcar_text h1 {
+    font-size: 35px;
+    font-family: 'KOTRA_BOLD-Bold'; 
+    color: rgb(57, 116, 217);
+    padding-top: 12%;
+    margin-left: 30px;
+}
+
+.camcar{
+    width: 1200px;
+    height: 370px;
+    padding-top: 20px;
+    margin: auto;
+/*    margin-left: 19%;*/
+    display: flex;
+    justify-content: center;
+/*    background-color: rgb(247, 195, 195);*/
+}
+
+.camcar_box1 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+/*    background-color: #253343;*/
+    border-radius: 13px;
+}
+
+.camcar_box2 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+/*    background-color: #253343;*/
+    border-radius: 13px;
+    
+}
+.camcar_box3 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+/*    background-color: #253343;*/
+    border-radius: 13px;
+    
+}
+.camcar2{
+    width: 1200px;
+    height: 680px;
+    padding-top: 10%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+/*    background-color: rgb(250, 157, 157);*/
+}
+.camcar2_box1 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+/*    background-color: #253343;*/
+    border-radius: 13px;
+}
+
+.camcar2_box2 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+/*    background-color: #253343;*/
+    border-radius: 13px;
+    
+}
+.camcar2_box3 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+/*    background-color: #253343;*/
+    border-radius: 13px;
+    
+}
+
+.morecar{
+    width: 1200px;
+    height: 50px;
+/*    padding-top: 5%;*/
+    display: flex;
+    margin: auto;
+    justify-content: center;
+/*    background-color: rgb(120, 149, 175);*/
+    
+
+}
+
+.morecar_btn{
+    width: 203px;
+    height: 40px;
+    border: 2px solid rgb(57, 116, 217);
+    border-radius: 10px;
+    background-color: white;
+    color:rgb(57, 116, 217);
+    
+}
+
+.chabak_text{
+    width: 1200px;
+    height: 200px;
+    margin: auto;
+/*    background-color: antiquewhite;*/
+}
+.chabak_text h1 {
+    font-size: 35px;
+    font-family: 'KOTRA_BOLD-Bold'; 
+    color: rgb(57, 116, 217);
+    padding-top: 10%;
+    margin-left: 30px;
+}
+
+.chabak_text h4 {
+    color: rgb(133, 133, 133);
+    margin-left: 30px;
+}
+
+
+.chabak{
+    width: 1200px;
+    height: 350px;
+    padding-top: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+/*    background-color: rgb(247, 195, 195);*/
+}
+
+.chabak_box1 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+    background-color: #253343;
+    border-radius: 13px;
+}
+
+.chabak_box2 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+    background-color: #253343;
+    border-radius: 13px;
+    
+}
+
+.chabak_box3 {
+    width: 370px ;
+    height: 250px;
+    background-color: #253343;
+    border-radius: 13px;
+    
+}
+.chabak2{
+    width: 1200px;
+    height: 370px;
+    padding-top: 5%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+/*    background-color: rgb(250, 157, 157);*/
+}
+.chabak2_box1 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+    background-color: #253343;
+    border-radius: 13px;
+}
+
+.chabak2_box2 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+    background-color: #253343;
+    border-radius: 13px;
+    
+}
+.chabak2_box3 {
+    width: 370px ;
+    height: 250px;
+    background-color: #253343;
+    border-radius: 13px;
+    
+}
+
+.chabak3{
+    width: 1200px;
+    height: 370px;
+    padding-top: 8%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+/*    background-color: rgb(250, 157, 157);*/
+}
+.chabak3_box1 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+    background-color: #253343;
+    border-radius: 13px;
+}
+
+.chabak3_box2 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+    background-color: #253343;
+    border-radius: 13px;
+    
+}
+.chabak3_box3 {
+    width: 370px ;
+    height: 250px;
+    background-color: #253343;
+    border-radius: 13px;
+    
+}
+
+.morebak{
+    width: 1200px;
+    height: 40px;
+    padding-top: 11%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+/*    background-color: rgb(120, 149, 175);*/
+}
+
+.morebak_btn{
+    width: 203px;
+    height: 40px;
+    border: 2px solid rgb(57, 116, 217);
+    border-radius: 10px;
+    background-color: white;
+    color:rgb(57, 116, 217);    
+}
+
+.tip_text{
+    width: 1200px;
+    height: 200px;
+    margin: auto;
+/*    background-color: antiquewhite;*/
+}
+.tip_text h1 {
+    color: rgb(57, 116, 217);
+    padding-top: 10%;
+    margin-left: 30px;
+    font-size: 35px;
+    font-family: 'KOTRA_BOLD-Bold'; 
+}
+
+.tip_text h4 {
+    color: rgb(133, 133, 133);
+    margin-left: 30px;
+}
+
+.tip{
+    width: 1200px;
+    height: 250px;
+    padding-top: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+/*    background-color: rgb(247, 195, 195);*/
+}
+
+.tip_box1 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+/*    background-color: #253343;*/
+    border-radius: 13px 13px 0 0 ;
+}
+
+.tip_box2 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+    border-radius: 13px 13px 0 0 ;
+    
+}
+.tip_box3 {
+    width: 370px ;
+    height: 250px;
+    border-radius: 13px 13px 0 0 ;
+    
+}
+
+.tip2{
+    width: 1200px;
+    height: 250px;
+    
+    margin: auto;
+    display: flex;
+    justify-content: center;
+/*    background-color: rgb(247, 195, 195);*/
+}
+
+.tip2_box1 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+    background-color: #dde6f0;
+    border-radius: 0 0 13px 13px ;
+}
+
+.tip2_box2 {
+    width: 370px ;
+    height: 250px;
+    margin-right: 20px;
+    background-color: #dde6f0;
+    border-radius: 0 0 13px 13px ;
+}
+
+.tip2_box3 {
+    width: 370px ;
+    height: 250px;
+    background-color: #dde6f0;
+    border-radius: 0 0 13px 13px ;
+}
+
+.tip p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    width: 350px;
+    height: 85px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: -10px;
+    color: #777777;
+}
+
+.tip h5{
+    font-size: 16px;
+    font-family: 'KOTRA_BOLD-Bold'; 
+    color:rgb(57, 116, 217);    
+}
+
+
+.card:hover, 
+.favtag_place:hover,
+.favtag_place2:hover,
+.favtag_place3:hover,
+.favtag2_place:hover,
+.favtag2_place2:hover,
+.favtag2_place3:hover{
+    box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.2);
+    /* 다른 필요한 스타일링도 추가할 수 있습니다. */
+}
+
+
+
+
+.foot{
+    width: 1200px;
+    height: 250px;
+    padding-top: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.carousel-container {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 900px;
+    overflow: hidden;
+}
+
+.fixed-div {
+    width: 480px;
+    height: 300px;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 18%;
+}
+
+.favtag_place img {
+    width:524px ;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.favtag_place2 img {
+    width:297px ;
+    height: 230px;
+    border-radius: 10px;
+}
+.favtag_place3 img {
+    width:297px ;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.favtag2_place img {
+    width:524px ;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.favtag2_place2 img {
+    width:297px ;
+    height: 230px;
+    border-radius: 10px;
+}
+.favtag2_place3 img {
+    width:297px ;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.camcar img {
+    border-radius: 10px;
+}
+
+.camcar2 img {
+    border-radius: 10px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card {
+    margin-left: 10px;
+}
+
+.btn_div {
+    width: 357px;
+    height: 120px;
+    background-color: aliceblue; 
+    border-radius: 15px;
+}
+
+.card-body {
+    border: none;
+    width: 370px;
+}
+
+.fixed_btn {
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 440px;
+    height: 40px;
+    border: none;
+    background-color: rgb(57, 116, 217);
+}
+
+.carousel-item img{ 
+    max-width:100%;
+    height: 900px;
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    height: 900px;
+}
+
+.tip .card{
+    margin-left: 0.8px;
+}
+
+.condiv{
+    width: 370px;
+    height: 250px;
+
+}
+
+
+
+.carousel-container {
+  width: 370px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.carousel-container .carousel-inner {
+  width: 100%;
+  height: 250px;
+}
+
+.carousel-container .carousel-inner .carousel-item img {
+  width: 370px;
+  height: 250px;
+  object-fit: cover; /* 이미지 비율을 유지하면서 캐러셀 영역에 맞게 크게 보여줌 */
+}
+
+.card img {
+    width: 370px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.abtn {
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+}
+
+
+/*상품 텍스트 a 태그*/
+.btn_div_t h5 {
+    padding-top: 10px;
+    margin-bottom: 5px;
+    text-align: start;
+}
+
+.btn_div {
+    text-align: start;
+    background-color: white;
+}
+
+.btn_div>h6 {
+    color: rgb(57, 116, 217);
+}
+
+.btn_div>h6>i {
+    margin-right: 10px;
+}
+
+.btn_div p {
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 0;
+    color: rgb(170, 170, 170);
+}
+
+.btn_div span{
+    font-size: 15px;
+}
+
+.btn_div_t p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 360px;
+    height: 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: rgb(86, 86, 86);
+}
+
+.btn_div_t {
+    border-bottom: 1px solid rgb(212, 212, 212);
+    background-color: white;
+}
+
+.btn_div_t2 h5 {
+    padding-top: 10px;
+    margin-bottom: 5px;
+    text-align: start;
+}
+
+.btn_div2 {
+    text-align: start;
+}
+
+.btn_div2>h6 {
+    color: rgb(57, 116, 217);
+}
+.btn_div2 p {
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 0;
+    color: rgb(170, 170, 170);
+}
+
+.btn_div_t2 p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 360px;
+    height: 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: rgb(86, 86, 86);
+}
+
+.btn_div_t2 {
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+/*캠핑카 a태그 div*/
+.abtn2 {
+    width: 370px;
+    height: 180px;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+}
+/**/
+/**/
+
+/*캠핑카 예약 폼*/
+.reservation-form {
+    width: 400px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.reservation-form input{
+    width: 440px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0.5px solid gainsboro;
+}
+.form-select {
+    width: 440px;
+}
+
+
+.custom-reservation-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #custom-reservation-form {
+    flex: 1;
+  }
+  
+  .custom-date-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  
+  .custom-result-box {
+    width: 400px;
+    height: 40px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .custom-result-box .custom-selected-options {
+    font-weight: bold;
+  }
+  
+  /* ...다른 스타일들... */
+  .custom-checkboxes {
+    position: absolute;
+    top: -40%;
+    left: 100%;
+    display: none;
+    width: 200px;
+    height: 470px;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+  
+  .custom-reservation-form input[type="text"]:focus + .custom-checkboxes {
+    display: block;
+  }
+
+  .custom-checkboxes input {
+    flex-direction: column;
+    width: 20px;
+  }
+
+  .custom-checkboxes label {
+    width: 200px;
+    height: 30px;
+  }
+
+  .custom-checkboxes span {
+    position: absolute;
+    margin: 10px;
+}
+
+.close-button {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin-left: 80px;
+    background-color: rgb(57, 116, 217);
+    border: none;
+    color: white;
+    border-radius: 10px;
+  }
+
+.optionBox {
+    width: 440px;
+    height: 250px;
+    padding-top: 30px;
+}
+
+.fixed_btn i {
+    text-align: center;
+    margin: auto;
+}
+/**/
+
+.btn-primary {
+    background-color: white;
+    color: rgb(57, 116, 217);
+    border: none;
+}
+

@@ -1,0 +1,19 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <!-- LikeServlet 설정 -->
+    <servlet>
+        <servlet-name>LikeServlet</servlet-name>
+        <servlet-class>bbs.LikeServlet</servlet-class> <!-- 실제 패키지 경로로 수정 -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LikeServlet</servlet-name>
+        <url-pattern>/likeAction</url-pattern> <!-- 좋아요 처리를 담당하는 URL 패턴 -->
+    </servlet-mapping>
+
+    <!-- 그 외 다른 설정들 -->
+
+</web-app>
